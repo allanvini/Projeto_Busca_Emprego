@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{618903AE-AE9F-4877-BB7D-B0C751FA153D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BuscaEmprego</RootNamespace>
+    <AssemblyName>BuscaEmprego</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection\Connection.cs" />
+    <Compile Include="DAO\CadastroDAO.cs" />
+    <Compile Include="DAO\CandidatoDAO.cs" />
+    <Compile Include="DAO\EmpresaDAO.cs" />
+    <Compile Include="DAO\LoginDAO.cs" />
+    <Compile Include="Forms\CadastroForms\CadastroCandidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadastroForms\CadastroCandidato.Designer.cs">
+      <DependentUpon>CadastroCandidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadastroForms\CadastroEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadastroForms\CadastroEmpresa.Designer.cs">
+      <DependentUpon>CadastroEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForms\LoginCandidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForms\LoginCandidato.Designer.cs">
+      <DependentUpon>LoginCandidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForms\LoginEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForms\LoginEmpresa.Designer.cs">
+      <DependentUpon>LoginEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisCandidato\Candidaturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisCandidato\Candidaturas.Designer.cs">
+      <DependentUpon>Candidaturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisCandidato\Convites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisCandidato\Convites.Designer.cs">
+      <DependentUpon>Convites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisCandidato\PainelCandidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisCandidato\PainelCandidato.Designer.cs">
+      <DependentUpon>PainelCandidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisCandidato\Vagas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisCandidato\Vagas.Designer.cs">
+      <DependentUpon>Vagas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisEmpresa\AdicionarVaga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisEmpresa\AdicionarVaga.Designer.cs">
+      <DependentUpon>AdicionarVaga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisEmpresa\CandidaturasRecebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisEmpresa\CandidaturasRecebidas.Designer.cs">
+      <DependentUpon>CandidaturasRecebidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisEmpresa\PainelEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisEmpresa\PainelEmpresa.Designer.cs">
+      <DependentUpon>PainelEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisEmpresa\VagasPublicadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Paineis\PaineisEmpresa\VagasPublicadas.Designer.cs">
+      <DependentUpon>VagasPublicadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Candidato.cs" />
+    <Compile Include="Models\Empresa.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CadastroForms\CadastroCandidato.resx">
+      <DependentUpon>CadastroCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadastroForms\CadastroEmpresa.resx">
+      <DependentUpon>CadastroEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForms\LoginCandidato.resx">
+      <DependentUpon>LoginCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForms\LoginEmpresa.resx">
+      <DependentUpon>LoginEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Paineis\PaineisCandidato\Candidaturas.resx">
+      <DependentUpon>Candidaturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Paineis\PaineisCandidato\Convites.resx">
+      <DependentUpon>Convites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Paineis\PaineisCandidato\PainelCandidato.resx">
+      <DependentUpon>PainelCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Paineis\PaineisCandidato\Vagas.resx">
+      <DependentUpon>Vagas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Paineis\PaineisEmpresa\AdicionarVaga.resx">
+      <DependentUpon>AdicionarVaga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Paineis\PaineisEmpresa\CandidaturasRecebidas.resx">
+      <DependentUpon>CandidaturasRecebidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Paineis\PaineisEmpresa\PainelEmpresa.resx">
+      <DependentUpon>PainelEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Paineis\PaineisEmpresa\VagasPublicadas.resx">
+      <DependentUpon>VagasPublicadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
