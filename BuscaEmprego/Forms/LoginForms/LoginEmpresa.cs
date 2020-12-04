@@ -51,7 +51,7 @@ namespace BuscaEmprego.Forms
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Forms.CadastroForms.CadastroCandidato cadastraEmpresa = new Forms.CadastroForms.CadastroCandidato();
+            Forms.CadastroForms.CadastroEmpresa cadastraEmpresa = new Forms.CadastroForms.CadastroEmpresa();
 
             cadastraEmpresa.ShowDialog();
         }
