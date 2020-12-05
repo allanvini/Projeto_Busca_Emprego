@@ -63,7 +63,7 @@
             this.Descricao});
             this.dataGridView1.Location = new System.Drawing.Point(12, 38);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(893, 150);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -71,11 +71,13 @@
             // 
             this.VagaID.HeaderText = "ID";
             this.VagaID.Name = "VagaID";
+            this.VagaID.Width = 50;
             // 
             // Empresa
             // 
             this.Empresa.HeaderText = "Empresa";
             this.Empresa.Name = "Empresa";
+            this.Empresa.Width = 150;
             // 
             // CNPJ
             // 
@@ -91,15 +93,16 @@
             // 
             this.Descricao.HeaderText = "Descricao da Vaga";
             this.Descricao.Name = "Descricao";
+            this.Descricao.Width = 450;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Candidato:";
+            this.label1.Text = "Usuário:";
             // 
             // lblCandidatoID
             // 
@@ -114,7 +117,7 @@
             this.txbIDVaga.Enabled = false;
             this.txbIDVaga.Location = new System.Drawing.Point(40, 217);
             this.txbIDVaga.Name = "txbIDVaga";
-            this.txbIDVaga.Size = new System.Drawing.Size(100, 20);
+            this.txbIDVaga.Size = new System.Drawing.Size(69, 20);
             this.txbIDVaga.TabIndex = 3;
             // 
             // label2
@@ -129,7 +132,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(156, 220);
+            this.label3.Location = new System.Drawing.Point(258, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 5;
@@ -139,7 +142,7 @@
             // txbNomeEmpresa
             // 
             this.txbNomeEmpresa.Enabled = false;
-            this.txbNomeEmpresa.Location = new System.Drawing.Point(210, 217);
+            this.txbNomeEmpresa.Location = new System.Drawing.Point(312, 218);
             this.txbNomeEmpresa.Name = "txbNomeEmpresa";
             this.txbNomeEmpresa.Size = new System.Drawing.Size(163, 20);
             this.txbNomeEmpresa.TabIndex = 6;
@@ -147,15 +150,15 @@
             // txbTituloVaga
             // 
             this.txbTituloVaga.Enabled = false;
-            this.txbTituloVaga.Location = new System.Drawing.Point(55, 261);
+            this.txbTituloVaga.Location = new System.Drawing.Point(520, 218);
             this.txbTituloVaga.Name = "txbTituloVaga";
-            this.txbTituloVaga.Size = new System.Drawing.Size(500, 20);
+            this.txbTituloVaga.Size = new System.Drawing.Size(385, 20);
             this.txbTituloVaga.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 264);
+            this.label4.Location = new System.Drawing.Point(481, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 13);
             this.label4.TabIndex = 7;
@@ -165,27 +168,27 @@
             // txbDescricao
             // 
             this.txbDescricao.Enabled = false;
-            this.txbDescricao.Location = new System.Drawing.Point(77, 298);
+            this.txbDescricao.Location = new System.Drawing.Point(19, 267);
             this.txbDescricao.Multiline = true;
             this.txbDescricao.Name = "txbDescricao";
-            this.txbDescricao.Size = new System.Drawing.Size(478, 104);
+            this.txbDescricao.Size = new System.Drawing.Size(886, 104);
             this.txbDescricao.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 301);
+            this.label5.Location = new System.Drawing.Point(16, 251);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.Size = new System.Drawing.Size(97, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Descrição";
+            this.label5.Text = "Descrição da vaga";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnCandidata
             // 
-            this.btnCandidata.Location = new System.Drawing.Point(208, 408);
+            this.btnCandidata.Location = new System.Drawing.Point(19, 393);
             this.btnCandidata.Name = "btnCandidata";
-            this.btnCandidata.Size = new System.Drawing.Size(157, 40);
+            this.btnCandidata.Size = new System.Drawing.Size(290, 40);
             this.btnCandidata.TabIndex = 11;
             this.btnCandidata.Text = "Candidatar-se";
             this.btnCandidata.UseVisualStyleBackColor = true;
@@ -193,9 +196,9 @@
             // 
             // btnFecha
             // 
-            this.btnFecha.Location = new System.Drawing.Point(371, 408);
+            this.btnFecha.Location = new System.Drawing.Point(611, 393);
             this.btnFecha.Name = "btnFecha";
-            this.btnFecha.Size = new System.Drawing.Size(157, 40);
+            this.btnFecha.Size = new System.Drawing.Size(294, 40);
             this.btnFecha.TabIndex = 12;
             this.btnFecha.Text = "Fechar";
             this.btnFecha.UseVisualStyleBackColor = true;
@@ -204,15 +207,15 @@
             // txbEmpresaID
             // 
             this.txbEmpresaID.Enabled = false;
-            this.txbEmpresaID.Location = new System.Drawing.Point(449, 217);
+            this.txbEmpresaID.Location = new System.Drawing.Point(183, 218);
             this.txbEmpresaID.Name = "txbEmpresaID";
-            this.txbEmpresaID.Size = new System.Drawing.Size(106, 20);
+            this.txbEmpresaID.Size = new System.Drawing.Size(69, 20);
             this.txbEmpresaID.TabIndex = 14;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(381, 220);
+            this.label6.Location = new System.Drawing.Point(115, 221);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 13);
             this.label6.TabIndex = 13;
@@ -221,9 +224,9 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(45, 408);
+            this.btnAtualizar.Location = new System.Drawing.Point(315, 393);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(157, 40);
+            this.btnAtualizar.Size = new System.Drawing.Size(290, 40);
             this.btnAtualizar.TabIndex = 15;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
@@ -233,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 460);
+            this.ClientSize = new System.Drawing.Size(921, 460);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.txbEmpresaID);
             this.Controls.Add(this.label6);
@@ -250,7 +253,10 @@
             this.Controls.Add(this.lblCandidatoID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Vagas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vagas";
             this.Load += new System.EventHandler(this.Vagas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -274,13 +280,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnCandidata;
         private System.Windows.Forms.Button btnFecha;
+        private System.Windows.Forms.TextBox txbEmpresaID;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.DataGridViewTextBoxColumn VagaID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Empresa;
         private System.Windows.Forms.DataGridViewTextBoxColumn CNPJ;
         private System.Windows.Forms.DataGridViewTextBoxColumn TituloVaga;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
-        private System.Windows.Forms.TextBox txbEmpresaID;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnAtualizar;
     }
 }

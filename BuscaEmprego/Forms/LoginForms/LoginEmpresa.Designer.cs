@@ -41,7 +41,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(59, 278);
+            this.btnCadastrar.Location = new System.Drawing.Point(57, 177);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(188, 34);
             this.btnCadastrar.TabIndex = 17;
@@ -52,7 +52,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(45, 244);
+            this.label5.Location = new System.Drawing.Point(43, 161);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(224, 13);
             this.label5.TabIndex = 16;
@@ -60,7 +60,7 @@
             // 
             // btnLogar
             // 
-            this.btnLogar.Location = new System.Drawing.Point(59, 157);
+            this.btnLogar.Location = new System.Drawing.Point(57, 124);
             this.btnLogar.Name = "btnLogar";
             this.btnLogar.Size = new System.Drawing.Size(188, 34);
             this.btnLogar.TabIndex = 15;
@@ -71,7 +71,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 116);
+            this.label4.Location = new System.Drawing.Point(15, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 14;
@@ -79,15 +79,16 @@
             // 
             // txbSenhaLogin
             // 
-            this.txbSenhaLogin.Location = new System.Drawing.Point(59, 113);
+            this.txbSenhaLogin.Location = new System.Drawing.Point(57, 98);
             this.txbSenhaLogin.Name = "txbSenhaLogin";
             this.txbSenhaLogin.Size = new System.Drawing.Size(188, 20);
             this.txbSenhaLogin.TabIndex = 13;
+            this.txbSenhaLogin.UseSystemPasswordChar = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 90);
+            this.label3.Location = new System.Drawing.Point(19, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 12;
@@ -95,7 +96,7 @@
             // 
             // txbCNPJLogin
             // 
-            this.txbCNPJLogin.Location = new System.Drawing.Point(59, 87);
+            this.txbCNPJLogin.Location = new System.Drawing.Point(57, 72);
             this.txbCNPJLogin.Name = "txbCNPJLogin";
             this.txbCNPJLogin.Size = new System.Drawing.Size(188, 20);
             this.txbCNPJLogin.TabIndex = 11;
@@ -103,7 +104,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 46);
+            this.label2.Location = new System.Drawing.Point(45, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(219, 13);
             this.label2.TabIndex = 10;
@@ -112,18 +113,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(109, 26);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(52, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 20);
+            this.label1.Size = new System.Drawing.Size(212, 29);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Bem Vindo!";
+            this.label1.Text = "Área da empresa";
             // 
             // LoginEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 353);
+            this.ClientSize = new System.Drawing.Size(309, 220);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnLogar);
@@ -133,7 +134,10 @@
             this.Controls.Add(this.txbCNPJLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "LoginEmpresa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginEmpresa";
             this.ResumeLayout(false);
             this.PerformLayout();

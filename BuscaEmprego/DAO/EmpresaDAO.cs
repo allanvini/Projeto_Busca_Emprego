@@ -88,6 +88,39 @@ namespace BuscaEmprego.DAO
             }
         }
 
+
+        public void reprovaCandidato(string vagaID, string empresaID, string candidatoID)
+        {
+            con = new MySqlConnection();
+            connection = new Connection.Connection();
+
+            con.ConnectionString = connection.getconnectionString();
+
+            string query = "CALL reprovaCandidatura(?vagaID, ?empresaID, ?candidatoID)";
+
+            try
+            {
+                con.Open();
+                MySqlCommand command = new MySqlCommand(query, con);
+
+                command.Parameters.AddWithValue("?VagaID", vagaID);
+                command.Parameters.AddWithValue("?empresaID", empresaID);
+                command.Parameters.AddWithValue("?candidatoID", candidatoID);
+
+                command.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex, "Ocorreu um erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                con.Close();
+                con.Close();
+                MessageBox.Show("Candidatura reprovada com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         public void removeVaga(string VagaID)
         {
             con = new MySqlConnection();

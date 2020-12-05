@@ -85,14 +85,15 @@
             this.Curriculo});
             this.dataGridView1.Location = new System.Drawing.Point(16, 43);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(793, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(893, 150);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // ID
             // 
-            this.ID.HeaderText = "ID_Candidatura";
+            this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
+            this.ID.Width = 50;
             // 
             // Vaga
             // 
@@ -101,8 +102,9 @@
             // 
             // ID_Vaga
             // 
-            this.ID_Vaga.HeaderText = "ID_Vaga";
+            this.ID_Vaga.HeaderText = "ID Vaga";
             this.ID_Vaga.Name = "ID_Vaga";
+            this.ID_Vaga.Width = 50;
             // 
             // Candidato
             // 
@@ -111,19 +113,19 @@
             // 
             // CPF_Candidato
             // 
-            this.CPF_Candidato.HeaderText = "CPF_Candidato";
+            this.CPF_Candidato.HeaderText = "CPF";
             this.CPF_Candidato.Name = "CPF_Candidato";
             // 
             // Curriculo
             // 
             this.Curriculo.HeaderText = "Curriculo";
             this.Curriculo.Name = "Curriculo";
-            this.Curriculo.Width = 250;
+            this.Curriculo.Width = 450;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 213);
+            this.label2.Location = new System.Drawing.Point(13, 215);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 3;
@@ -132,23 +134,23 @@
             // txbCandidaturaID
             // 
             this.txbCandidaturaID.Enabled = false;
-            this.txbCandidaturaID.Location = new System.Drawing.Point(97, 210);
+            this.txbCandidaturaID.Location = new System.Drawing.Point(97, 212);
             this.txbCandidaturaID.Name = "txbCandidaturaID";
-            this.txbCandidaturaID.Size = new System.Drawing.Size(100, 20);
+            this.txbCandidaturaID.Size = new System.Drawing.Size(55, 20);
             this.txbCandidaturaID.TabIndex = 4;
             // 
             // txbVagaID
             // 
             this.txbVagaID.Enabled = false;
-            this.txbVagaID.Location = new System.Drawing.Point(255, 210);
+            this.txbVagaID.Location = new System.Drawing.Point(210, 212);
             this.txbVagaID.Name = "txbVagaID";
-            this.txbVagaID.Size = new System.Drawing.Size(100, 20);
+            this.txbVagaID.Size = new System.Drawing.Size(55, 20);
             this.txbVagaID.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(203, 213);
+            this.label3.Location = new System.Drawing.Point(158, 215);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 5;
@@ -157,15 +159,15 @@
             // txbCandidatoID
             // 
             this.txbCandidatoID.Enabled = false;
-            this.txbCandidatoID.Location = new System.Drawing.Point(88, 236);
+            this.txbCandidatoID.Location = new System.Drawing.Point(346, 212);
             this.txbCandidatoID.Name = "txbCandidatoID";
-            this.txbCandidatoID.Size = new System.Drawing.Size(95, 20);
+            this.txbCandidatoID.Size = new System.Drawing.Size(55, 20);
             this.txbCandidatoID.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 239);
+            this.label4.Location = new System.Drawing.Point(271, 215);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 7;
@@ -174,15 +176,15 @@
             // txbVaga
             // 
             this.txbVaga.Enabled = false;
-            this.txbVaga.Location = new System.Drawing.Point(51, 262);
+            this.txbVaga.Location = new System.Drawing.Point(660, 212);
             this.txbVaga.Name = "txbVaga";
-            this.txbVaga.Size = new System.Drawing.Size(304, 20);
+            this.txbVaga.Size = new System.Drawing.Size(249, 20);
             this.txbVaga.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 265);
+            this.label5.Location = new System.Drawing.Point(622, 215);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 9;
@@ -191,7 +193,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 296);
+            this.label6.Location = new System.Drawing.Point(13, 247);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 13);
             this.label6.TabIndex = 11;
@@ -200,17 +202,17 @@
             // txbCurriculo
             // 
             this.txbCurriculo.Enabled = false;
-            this.txbCurriculo.Location = new System.Drawing.Point(12, 312);
+            this.txbCurriculo.Location = new System.Drawing.Point(12, 263);
             this.txbCurriculo.Multiline = true;
             this.txbCurriculo.Name = "txbCurriculo";
-            this.txbCurriculo.Size = new System.Drawing.Size(343, 94);
+            this.txbCurriculo.Size = new System.Drawing.Size(897, 118);
             this.txbCurriculo.TabIndex = 12;
             // 
             // btnAprovaCandidato
             // 
-            this.btnAprovaCandidato.Location = new System.Drawing.Point(425, 213);
+            this.btnAprovaCandidato.Location = new System.Drawing.Point(12, 387);
             this.btnAprovaCandidato.Name = "btnAprovaCandidato";
-            this.btnAprovaCandidato.Size = new System.Drawing.Size(384, 43);
+            this.btnAprovaCandidato.Size = new System.Drawing.Size(220, 43);
             this.btnAprovaCandidato.TabIndex = 13;
             this.btnAprovaCandidato.Text = "Aprovar Candidato";
             this.btnAprovaCandidato.UseVisualStyleBackColor = true;
@@ -218,9 +220,9 @@
             // 
             // btnReprovaCandidato
             // 
-            this.btnReprovaCandidato.Location = new System.Drawing.Point(425, 262);
+            this.btnReprovaCandidato.Location = new System.Drawing.Point(238, 387);
             this.btnReprovaCandidato.Name = "btnReprovaCandidato";
-            this.btnReprovaCandidato.Size = new System.Drawing.Size(384, 45);
+            this.btnReprovaCandidato.Size = new System.Drawing.Size(220, 43);
             this.btnReprovaCandidato.TabIndex = 14;
             this.btnReprovaCandidato.Text = "Reprovar Candidato";
             this.btnReprovaCandidato.UseVisualStyleBackColor = true;
@@ -228,9 +230,9 @@
             // 
             // btnAtualizaLista
             // 
-            this.btnAtualizaLista.Location = new System.Drawing.Point(425, 313);
+            this.btnAtualizaLista.Location = new System.Drawing.Point(464, 387);
             this.btnAtualizaLista.Name = "btnAtualizaLista";
-            this.btnAtualizaLista.Size = new System.Drawing.Size(384, 44);
+            this.btnAtualizaLista.Size = new System.Drawing.Size(220, 43);
             this.btnAtualizaLista.TabIndex = 15;
             this.btnAtualizaLista.Text = "Atualizar Lista";
             this.btnAtualizaLista.UseVisualStyleBackColor = true;
@@ -238,9 +240,9 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(425, 363);
+            this.btnVoltar.Location = new System.Drawing.Point(690, 387);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(384, 43);
+            this.btnVoltar.Size = new System.Drawing.Size(220, 43);
             this.btnVoltar.TabIndex = 16;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -249,15 +251,15 @@
             // txbCandidato
             // 
             this.txbCandidato.Enabled = false;
-            this.txbCandidato.Location = new System.Drawing.Point(250, 236);
+            this.txbCandidato.Location = new System.Drawing.Point(468, 212);
             this.txbCandidato.Name = "txbCandidato";
-            this.txbCandidato.Size = new System.Drawing.Size(105, 20);
+            this.txbCandidato.Size = new System.Drawing.Size(148, 20);
             this.txbCandidato.TabIndex = 18;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(189, 239);
+            this.label7.Location = new System.Drawing.Point(407, 215);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 13);
             this.label7.TabIndex = 17;
@@ -267,7 +269,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 425);
+            this.ClientSize = new System.Drawing.Size(924, 448);
             this.Controls.Add(this.txbCandidato);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnVoltar);
@@ -287,7 +289,10 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblEmpresaID);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "CandidaturasRecebidas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CandidaturasRecebidas";
             this.Load += new System.EventHandler(this.CandidaturasRecebidas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -301,12 +306,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblEmpresaID;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Vaga;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Vaga;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Candidato;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CPF_Candidato;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Curriculo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbCandidaturaID;
         private System.Windows.Forms.TextBox txbVagaID;
@@ -323,5 +322,11 @@
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.TextBox txbCandidato;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Vaga;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Vaga;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Candidato;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CPF_Candidato;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Curriculo;
     }
 }

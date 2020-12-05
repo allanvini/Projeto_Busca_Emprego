@@ -48,6 +48,7 @@
             this.btnVoltar = new System.Windows.Forms.Button();
             this.txbVagaID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,12 +71,13 @@
             // 
             this.CandidaturaID.HeaderText = "ID Candidatura";
             this.CandidaturaID.Name = "CandidaturaID";
-            this.CandidaturaID.Width = 150;
+            this.CandidaturaID.Width = 50;
             // 
             // IDVaga
             // 
             this.IDVaga.HeaderText = "ID Vaga";
             this.IDVaga.Name = "IDVaga";
+            this.IDVaga.Width = 50;
             // 
             // Empresa
             // 
@@ -87,22 +89,22 @@
             // 
             this.Vaga.HeaderText = "Vaga";
             this.Vaga.Name = "Vaga";
-            this.Vaga.Width = 200;
+            this.Vaga.Width = 150;
             // 
             // Descricao
             // 
             this.Descricao.HeaderText = "Descricao";
             this.Descricao.Name = "Descricao";
-            this.Descricao.Width = 250;
+            this.Descricao.Width = 450;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(15, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Candidato:";
+            this.label1.Text = "Usuário:";
             // 
             // lblCandidatoID
             // 
@@ -166,7 +168,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 275);
+            this.label5.Location = new System.Drawing.Point(12, 239);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 9;
@@ -175,17 +177,17 @@
             // txbDescricao
             // 
             this.txbDescricao.Enabled = false;
-            this.txbDescricao.Location = new System.Drawing.Point(85, 237);
+            this.txbDescricao.Location = new System.Drawing.Point(15, 255);
             this.txbDescricao.Multiline = true;
             this.txbDescricao.Name = "txbDescricao";
-            this.txbDescricao.Size = new System.Drawing.Size(824, 95);
+            this.txbDescricao.Size = new System.Drawing.Size(894, 95);
             this.txbDescricao.TabIndex = 10;
             // 
             // btnRemoverCandidatura
             // 
-            this.btnRemoverCandidatura.Location = new System.Drawing.Point(245, 347);
+            this.btnRemoverCandidatura.Location = new System.Drawing.Point(303, 356);
             this.btnRemoverCandidatura.Name = "btnRemoverCandidatura";
-            this.btnRemoverCandidatura.Size = new System.Drawing.Size(219, 60);
+            this.btnRemoverCandidatura.Size = new System.Drawing.Size(321, 43);
             this.btnRemoverCandidatura.TabIndex = 11;
             this.btnRemoverCandidatura.Text = "Desistir";
             this.btnRemoverCandidatura.UseVisualStyleBackColor = true;
@@ -193,9 +195,9 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(470, 347);
+            this.btnVoltar.Location = new System.Drawing.Point(630, 356);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(219, 60);
+            this.btnVoltar.Size = new System.Drawing.Size(279, 43);
             this.btnVoltar.TabIndex = 12;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -218,11 +220,22 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "VagaID";
             // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Location = new System.Drawing.Point(18, 356);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(279, 43);
+            this.btnAtualizar.TabIndex = 15;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
             // Candidaturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 419);
+            this.ClientSize = new System.Drawing.Size(926, 411);
+            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.txbVagaID);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnVoltar);
@@ -238,7 +251,9 @@
             this.Controls.Add(this.lblCandidatoID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Candidaturas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Candidaturas";
             this.Load += new System.EventHandler(this.Candidaturas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -262,12 +277,13 @@
         private System.Windows.Forms.TextBox txbDescricao;
         private System.Windows.Forms.Button btnRemoverCandidatura;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.TextBox txbVagaID;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn CandidaturaID;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDVaga;
         private System.Windows.Forms.DataGridViewTextBoxColumn Empresa;
         private System.Windows.Forms.DataGridViewTextBoxColumn Vaga;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
-        private System.Windows.Forms.TextBox txbVagaID;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }

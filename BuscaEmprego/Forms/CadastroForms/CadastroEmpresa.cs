@@ -29,7 +29,6 @@ namespace BuscaEmprego.Forms.CadastroForms
             cadastro.cadastraEmpresa(CNPJ, Nome, Endereco, Senha);
 
             this.Close();
-
         }
     }
 }

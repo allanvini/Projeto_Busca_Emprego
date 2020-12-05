@@ -72,7 +72,7 @@
             this.Descricao});
             this.dataGridView1.Location = new System.Drawing.Point(15, 26);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(493, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(643, 150);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -80,6 +80,7 @@
             // 
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
+            this.ID.Width = 50;
             // 
             // Vaga
             // 
@@ -90,12 +91,12 @@
             // 
             this.Descricao.HeaderText = "Descricao";
             this.Descricao.Name = "Descricao";
-            this.Descricao.Width = 250;
+            this.Descricao.Width = 450;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(384, 197);
+            this.label2.Location = new System.Drawing.Point(15, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(18, 13);
             this.label2.TabIndex = 5;
@@ -104,7 +105,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 197);
+            this.label3.Location = new System.Drawing.Point(109, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 6;
@@ -122,17 +123,17 @@
             // txbVagaID
             // 
             this.txbVagaID.Enabled = false;
-            this.txbVagaID.Location = new System.Drawing.Point(408, 194);
+            this.txbVagaID.Location = new System.Drawing.Point(39, 188);
             this.txbVagaID.Name = "txbVagaID";
-            this.txbVagaID.Size = new System.Drawing.Size(100, 20);
+            this.txbVagaID.Size = new System.Drawing.Size(64, 20);
             this.txbVagaID.TabIndex = 8;
             // 
             // txbTituloVaga
             // 
             this.txbTituloVaga.Enabled = false;
-            this.txbTituloVaga.Location = new System.Drawing.Point(54, 194);
+            this.txbTituloVaga.Location = new System.Drawing.Point(148, 188);
             this.txbTituloVaga.Name = "txbTituloVaga";
-            this.txbTituloVaga.Size = new System.Drawing.Size(324, 20);
+            this.txbTituloVaga.Size = new System.Drawing.Size(510, 20);
             this.txbTituloVaga.TabIndex = 9;
             // 
             // txbDescricaoVaga
@@ -141,14 +142,14 @@
             this.txbDescricaoVaga.Location = new System.Drawing.Point(18, 238);
             this.txbDescricaoVaga.Multiline = true;
             this.txbDescricaoVaga.Name = "txbDescricaoVaga";
-            this.txbDescricaoVaga.Size = new System.Drawing.Size(490, 94);
+            this.txbDescricaoVaga.Size = new System.Drawing.Size(640, 94);
             this.txbDescricaoVaga.TabIndex = 10;
             // 
             // btnRemoverVaga
             // 
-            this.btnRemoverVaga.Location = new System.Drawing.Point(356, 350);
+            this.btnRemoverVaga.Location = new System.Drawing.Point(459, 350);
             this.btnRemoverVaga.Name = "btnRemoverVaga";
-            this.btnRemoverVaga.Size = new System.Drawing.Size(152, 42);
+            this.btnRemoverVaga.Size = new System.Drawing.Size(199, 42);
             this.btnRemoverVaga.TabIndex = 11;
             this.btnRemoverVaga.Text = "Remover Vaga";
             this.btnRemoverVaga.UseVisualStyleBackColor = true;
@@ -156,9 +157,9 @@
             // 
             // btnAdicionarVaga
             // 
-            this.btnAdicionarVaga.Location = new System.Drawing.Point(188, 350);
+            this.btnAdicionarVaga.Location = new System.Drawing.Point(238, 350);
             this.btnAdicionarVaga.Name = "btnAdicionarVaga";
-            this.btnAdicionarVaga.Size = new System.Drawing.Size(152, 42);
+            this.btnAdicionarVaga.Size = new System.Drawing.Size(204, 42);
             this.btnAdicionarVaga.TabIndex = 12;
             this.btnAdicionarVaga.Text = "Adicionar Nova Vaga";
             this.btnAdicionarVaga.UseVisualStyleBackColor = true;
@@ -168,7 +169,7 @@
             // 
             this.btnAtualizar.Location = new System.Drawing.Point(18, 350);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(152, 42);
+            this.btnAtualizar.Size = new System.Drawing.Size(204, 42);
             this.btnAtualizar.TabIndex = 13;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
@@ -178,7 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 409);
+            this.ClientSize = new System.Drawing.Size(675, 409);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnAdicionarVaga);
             this.Controls.Add(this.btnRemoverVaga);
@@ -191,7 +192,10 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblEmpresaID);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "VagasPublicadas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VagasPublicadas";
             this.Load += new System.EventHandler(this.VagasPublicadas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -205,9 +209,6 @@
         private System.Windows.Forms.Label lblEmpresaID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Vaga;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -217,5 +218,8 @@
         private System.Windows.Forms.Button btnRemoverVaga;
         private System.Windows.Forms.Button btnAdicionarVaga;
         private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Vaga;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
     }
 }

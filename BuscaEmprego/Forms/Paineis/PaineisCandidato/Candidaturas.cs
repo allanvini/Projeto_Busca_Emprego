@@ -108,5 +108,10 @@ namespace BuscaEmprego.Forms.Paineis.PaineisCandidato
 
             carregaDados();
         }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            carregaDados();
+        }
     }
 }

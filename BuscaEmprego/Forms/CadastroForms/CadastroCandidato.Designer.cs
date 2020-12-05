@@ -44,9 +44,9 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(37, 371);
+            this.btnCadastrar.Location = new System.Drawing.Point(91, 351);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(308, 60);
+            this.btnCadastrar.Size = new System.Drawing.Size(278, 60);
             this.btnCadastrar.TabIndex = 19;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -54,7 +54,7 @@
             // 
             // txbSenha
             // 
-            this.txbSenha.Location = new System.Drawing.Point(67, 182);
+            this.txbSenha.Location = new System.Drawing.Point(91, 162);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.Size = new System.Drawing.Size(278, 20);
             this.txbSenha.TabIndex = 18;
@@ -62,7 +62,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 185);
+            this.label5.Location = new System.Drawing.Point(47, 165);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 17;
@@ -70,7 +70,7 @@
             // 
             // txbIdade
             // 
-            this.txbIdade.Location = new System.Drawing.Point(67, 149);
+            this.txbIdade.Location = new System.Drawing.Point(91, 129);
             this.txbIdade.Name = "txbIdade";
             this.txbIdade.Size = new System.Drawing.Size(278, 20);
             this.txbIdade.TabIndex = 16;
@@ -78,7 +78,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 152);
+            this.label4.Location = new System.Drawing.Point(47, 132);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 15;
@@ -86,7 +86,7 @@
             // 
             // txbNome
             // 
-            this.txbNome.Location = new System.Drawing.Point(67, 116);
+            this.txbNome.Location = new System.Drawing.Point(91, 96);
             this.txbNome.Name = "txbNome";
             this.txbNome.Size = new System.Drawing.Size(278, 20);
             this.txbNome.TabIndex = 14;
@@ -94,7 +94,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 119);
+            this.label3.Location = new System.Drawing.Point(51, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 13;
@@ -102,7 +102,7 @@
             // 
             // txbCPF
             // 
-            this.txbCPF.Location = new System.Drawing.Point(67, 81);
+            this.txbCPF.Location = new System.Drawing.Point(91, 61);
             this.txbCPF.Name = "txbCPF";
             this.txbCPF.Size = new System.Drawing.Size(278, 20);
             this.txbCPF.TabIndex = 12;
@@ -110,7 +110,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 84);
+            this.label2.Location = new System.Drawing.Point(58, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 11;
@@ -119,17 +119,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(362, 45);
+            this.label1.Size = new System.Drawing.Size(437, 32);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Cadastro de Candidato";
+            this.label1.Text = "Formulário de cadastro de candidato";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txbCurriculo
             // 
-            this.txbCurriculo.Location = new System.Drawing.Point(67, 214);
+            this.txbCurriculo.Location = new System.Drawing.Point(91, 194);
             this.txbCurriculo.MaxLength = 255;
             this.txbCurriculo.Multiline = true;
             this.txbCurriculo.Name = "txbCurriculo";
@@ -139,7 +139,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 217);
+            this.label6.Location = new System.Drawing.Point(33, 197);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 13);
             this.label6.TabIndex = 20;
@@ -150,7 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 454);
+            this.ClientSize = new System.Drawing.Size(461, 445);
             this.Controls.Add(this.txbCurriculo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCadastrar);
@@ -163,7 +163,9 @@
             this.Controls.Add(this.txbCPF);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "CadastroCandidato";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario de cadastro";
             this.ResumeLayout(false);
             this.PerformLayout();

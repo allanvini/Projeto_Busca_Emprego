@@ -49,6 +49,13 @@ namespace BuscaEmprego.Models
             edao.aprovaCandidato(VagaID, Cnpj, CandidatoID, mensagemConvite);
         }
 
+        public void reprovaCandidatura()
+        {
+            edao = new DAO.EmpresaDAO();
+
+            edao.reprovaCandidato(vagaID, cnpj,candidatoID);
+        }
+
         public void removeVaga()
         {
             edao = new DAO.EmpresaDAO();

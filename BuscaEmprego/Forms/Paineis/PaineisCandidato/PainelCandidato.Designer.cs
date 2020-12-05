@@ -41,33 +41,34 @@
             // 
             this.lblNomeCandidato.AutoSize = true;
             this.lblNomeCandidato.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeCandidato.Location = new System.Drawing.Point(63, 9);
+            this.lblNomeCandidato.Location = new System.Drawing.Point(46, 9);
             this.lblNomeCandidato.Name = "lblNomeCandidato";
-            this.lblNomeCandidato.Size = new System.Drawing.Size(0, 33);
+            this.lblNomeCandidato.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.lblNomeCandidato.Size = new System.Drawing.Size(30, 33);
             this.lblNomeCandidato.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 42);
+            this.label2.Location = new System.Drawing.Point(49, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "CPF:";
+            this.label2.Text = "Usuário:";
             // 
             // lblCPFCandidato
             // 
             this.lblCPFCandidato.AutoSize = true;
-            this.lblCPFCandidato.Location = new System.Drawing.Point(102, 42);
+            this.lblCPFCandidato.Location = new System.Drawing.Point(101, 55);
             this.lblCPFCandidato.Name = "lblCPFCandidato";
             this.lblCPFCandidato.Size = new System.Drawing.Size(0, 13);
             this.lblCPFCandidato.TabIndex = 3;
             // 
             // btnVerCandidaturas
             // 
-            this.btnVerCandidaturas.Location = new System.Drawing.Point(21, 58);
+            this.btnVerCandidaturas.Location = new System.Drawing.Point(29, 83);
             this.btnVerCandidaturas.Name = "btnVerCandidaturas";
-            this.btnVerCandidaturas.Size = new System.Drawing.Size(465, 47);
+            this.btnVerCandidaturas.Size = new System.Drawing.Size(228, 47);
             this.btnVerCandidaturas.TabIndex = 4;
             this.btnVerCandidaturas.Text = "Minhas candidaturas";
             this.btnVerCandidaturas.UseVisualStyleBackColor = true;
@@ -75,9 +76,9 @@
             // 
             // btnVerVagas
             // 
-            this.btnVerVagas.Location = new System.Drawing.Point(21, 111);
+            this.btnVerVagas.Location = new System.Drawing.Point(260, 83);
             this.btnVerVagas.Name = "btnVerVagas";
-            this.btnVerVagas.Size = new System.Drawing.Size(465, 47);
+            this.btnVerVagas.Size = new System.Drawing.Size(228, 47);
             this.btnVerVagas.TabIndex = 5;
             this.btnVerVagas.Text = "Ver vagas";
             this.btnVerVagas.UseVisualStyleBackColor = true;
@@ -85,9 +86,9 @@
             // 
             // btnVerConvites
             // 
-            this.btnVerConvites.Location = new System.Drawing.Point(21, 164);
+            this.btnVerConvites.Location = new System.Drawing.Point(29, 136);
             this.btnVerConvites.Name = "btnVerConvites";
-            this.btnVerConvites.Size = new System.Drawing.Size(465, 47);
+            this.btnVerConvites.Size = new System.Drawing.Size(228, 47);
             this.btnVerConvites.TabIndex = 6;
             this.btnVerConvites.Text = "Meus convites";
             this.btnVerConvites.UseVisualStyleBackColor = true;
@@ -95,9 +96,9 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(21, 217);
+            this.btnSair.Location = new System.Drawing.Point(260, 136);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(465, 47);
+            this.btnSair.Size = new System.Drawing.Size(228, 47);
             this.btnSair.TabIndex = 8;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -107,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 283);
+            this.ClientSize = new System.Drawing.Size(528, 205);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnVerConvites);
             this.Controls.Add(this.btnVerVagas);
@@ -115,7 +116,10 @@
             this.Controls.Add(this.lblCPFCandidato);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNomeCandidato);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "PainelCandidato";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PainelCandidato";
             this.ResumeLayout(false);
             this.PerformLayout();

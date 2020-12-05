@@ -35,6 +35,8 @@ namespace BuscaEmprego.Forms.Paineis.PaineisEmpresa
             empresa.DescricaoVaga = descricaoVaga;
 
             empresa.adicionaVaga();
+
+            this.Close();
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

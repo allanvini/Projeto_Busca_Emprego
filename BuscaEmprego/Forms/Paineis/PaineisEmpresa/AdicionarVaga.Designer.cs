@@ -78,7 +78,7 @@
             // 
             this.txbTituloVaga.Location = new System.Drawing.Point(12, 90);
             this.txbTituloVaga.Name = "txbTituloVaga";
-            this.txbTituloVaga.Size = new System.Drawing.Size(270, 20);
+            this.txbTituloVaga.Size = new System.Drawing.Size(420, 20);
             this.txbTituloVaga.TabIndex = 8;
             // 
             // txbDescricaoVaga
@@ -86,24 +86,25 @@
             this.txbDescricaoVaga.Location = new System.Drawing.Point(12, 129);
             this.txbDescricaoVaga.Multiline = true;
             this.txbDescricaoVaga.Name = "txbDescricaoVaga";
-            this.txbDescricaoVaga.Size = new System.Drawing.Size(270, 122);
+            this.txbDescricaoVaga.Size = new System.Drawing.Size(420, 122);
             this.txbDescricaoVaga.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(27, 32);
+            this.label4.Location = new System.Drawing.Point(41, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(231, 25);
+            this.label4.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.label4.Size = new System.Drawing.Size(375, 25);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Cadastrar nova vaga";
+            this.label4.Text = "Publicar nova vaga de emprego";
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(12, 258);
+            this.btnCadastrar.Location = new System.Drawing.Point(12, 257);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(130, 37);
+            this.btnCadastrar.Size = new System.Drawing.Size(200, 37);
             this.btnCadastrar.TabIndex = 11;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -111,9 +112,9 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(152, 258);
+            this.btnVoltar.Location = new System.Drawing.Point(232, 257);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(130, 37);
+            this.btnVoltar.Size = new System.Drawing.Size(200, 37);
             this.btnVoltar.TabIndex = 12;
             this.btnVoltar.Text = "Cancelar";
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -123,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(294, 309);
+            this.ClientSize = new System.Drawing.Size(444, 309);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label4);
@@ -133,7 +134,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblEmpresaID);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "AdicionarVaga";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdicionarVaga";
             this.ResumeLayout(false);
             this.PerformLayout();

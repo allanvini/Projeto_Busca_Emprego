@@ -90,5 +90,10 @@ namespace BuscaEmprego.Forms.Paineis.PaineisCandidato
         {
             this.Close();
         }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            carregarDados();
+        }
     }
 }

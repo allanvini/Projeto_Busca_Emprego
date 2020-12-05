@@ -44,7 +44,17 @@ namespace BuscaEmprego.Forms.Paineis.PaineisEmpresa
 
         private void btnReprovaCandidato_Click(object sender, EventArgs e)
         {
+            string vagaID = txbVagaID.Text;
+            string cnpj = lblEmpresaID.Text;
+            string cpf = txbCandidatoID.Text;
 
+            Models.Empresa empresa = new Models.Empresa();
+
+            empresa.VagaID = vagaID;
+            empresa.Cnpj = cnpj;
+            empresa.CandidatoID = cpf;
+
+            empresa.reprovaCandidatura();
         }
 
         private void btnAtualizaLista_Click(object sender, EventArgs e)

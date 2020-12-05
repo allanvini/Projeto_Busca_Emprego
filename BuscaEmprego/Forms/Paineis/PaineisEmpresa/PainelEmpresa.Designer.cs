@@ -38,9 +38,9 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(27, 169);
+            this.btnSair.Location = new System.Drawing.Point(29, 151);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(465, 47);
+            this.btnSair.Size = new System.Drawing.Size(462, 47);
             this.btnSair.TabIndex = 16;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -48,9 +48,9 @@
             // 
             // btnVerVagas
             // 
-            this.btnVerVagas.Location = new System.Drawing.Point(27, 116);
+            this.btnVerVagas.Location = new System.Drawing.Point(29, 98);
             this.btnVerVagas.Name = "btnVerVagas";
-            this.btnVerVagas.Size = new System.Drawing.Size(465, 47);
+            this.btnVerVagas.Size = new System.Drawing.Size(228, 47);
             this.btnVerVagas.TabIndex = 13;
             this.btnVerVagas.Text = "Minhas Vagas";
             this.btnVerVagas.UseVisualStyleBackColor = true;
@@ -58,9 +58,9 @@
             // 
             // btnVerCandidaturas
             // 
-            this.btnVerCandidaturas.Location = new System.Drawing.Point(27, 63);
+            this.btnVerCandidaturas.Location = new System.Drawing.Point(263, 98);
             this.btnVerCandidaturas.Name = "btnVerCandidaturas";
-            this.btnVerCandidaturas.Size = new System.Drawing.Size(465, 47);
+            this.btnVerCandidaturas.Size = new System.Drawing.Size(228, 47);
             this.btnVerCandidaturas.TabIndex = 12;
             this.btnVerCandidaturas.Text = "Ver candidaturas";
             this.btnVerCandidaturas.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@
             // lblCNPJEmpresa
             // 
             this.lblCNPJEmpresa.AutoSize = true;
-            this.lblCNPJEmpresa.Location = new System.Drawing.Point(115, 47);
+            this.lblCNPJEmpresa.Location = new System.Drawing.Point(101, 63);
             this.lblCNPJEmpresa.Name = "lblCNPJEmpresa";
             this.lblCNPJEmpresa.Size = new System.Drawing.Size(0, 13);
             this.lblCNPJEmpresa.TabIndex = 11;
@@ -77,33 +77,37 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(72, 47);
+            this.label2.Location = new System.Drawing.Point(44, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 10;
-            this.label2.Text = "CNPJ:";
+            this.label2.Text = "Empresa:";
             // 
             // lblNomeEmpresa
             // 
             this.lblNomeEmpresa.AutoSize = true;
             this.lblNomeEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeEmpresa.Location = new System.Drawing.Point(78, 9);
+            this.lblNomeEmpresa.Location = new System.Drawing.Point(41, 9);
             this.lblNomeEmpresa.Name = "lblNomeEmpresa";
-            this.lblNomeEmpresa.Size = new System.Drawing.Size(0, 33);
+            this.lblNomeEmpresa.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.lblNomeEmpresa.Size = new System.Drawing.Size(30, 33);
             this.lblNomeEmpresa.TabIndex = 9;
             // 
             // PainelEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 233);
+            this.ClientSize = new System.Drawing.Size(524, 218);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnVerVagas);
             this.Controls.Add(this.btnVerCandidaturas);
             this.Controls.Add(this.lblCNPJEmpresa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNomeEmpresa);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "PainelEmpresa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PainelEmpresa";
             this.ResumeLayout(false);
             this.PerformLayout();
